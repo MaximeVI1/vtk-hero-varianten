@@ -68,6 +68,9 @@ a.blk:hover { transform: translateY(-1px); box-shadow: 0 6px 14px -6px rgb(14 26
 .blk a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .blk .star { font-size: 14px; color: var(--muted); margin-left: 2px; }
 .blk .star:hover { color: var(--ink); }
+.track.two { min-height: 84px; }
+.track.two .blk { bottom: auto; height: 30px; top: 8px; }
+.track.two .blk.lane2 { top: 44px; }
 .now { position: absolute; top: 22px; bottom: 0; width: 2px; background: var(--ink); pointer-events: none; z-index: 2; }
 .now::before { content: attr(data-t); position: absolute; top: -20px; left: 50%; transform: translateX(-50%); background: var(--ink); color: var(--paper); font-size: 11px; font-weight: 600; padding: 1px 6px; border-radius: 999px; }
 .midnight { position: absolute; top: 22px; bottom: 0; width: 0; border-left: 1.5px dashed rgb(14 26 54 / .3); }
@@ -124,11 +127,11 @@ a.blk:hover { transform: translateY(-1px); box-shadow: 0 6px 14px -6px rgb(14 26
       </div>
       <div class="row">
         <a class="lab" href="#"><span class="ic" style="background:var(--paper-2)"><i class="ph ph-calendar-blank"></i></span><span><b>Events</b><small>2 vandaag</small></span></a>
-        <div class="track"><div class="blk c" style="--c:var(--cat-act)" data-from="12" data-to="24"><a href="#">12 Urencantus <small>Waaiberg</small></a><button class="star" aria-label="Interesse: 12 Urencantus"><i class="ph ph-star"></i></button></div><a class="blk c" href="#" style="--c:var(--cat-sport)" data-from="20.5" data-to="22">Looptraining</a></div>
+        <div class="track two"><div class="blk c" style="--c:var(--cat-act)" data-from="12" data-to="24"><a href="#">12 Urencantus <small>Waaiberg</small></a><button class="star" aria-label="Interesse: 12 Urencantus"><i class="ph ph-star"></i></button></div><a class="blk c lane2" href="#" style="--c:var(--cat-sport)" data-from="20.5" data-to="22">Looptraining</a></div>
       </div>
       <div class="row">
         <a class="lab" href="#"><span class="ic" style="background:var(--yellow)"><i class="ph ph-hand-heart"></i></span><span><b>Shiften</b><small>3 zoeken volk</small></span></a>
-        <div class="track"><a class="blk s" href="#" data-from="25" data-to="26.5">Bijrijden afbraak, 2 munten</a></div>
+        <div class="track"><a class="blk s" href="#" data-from="25" data-to="26.5">Bijrijden, 2 munten</a></div>
       </div>
     </div>
   </section>
